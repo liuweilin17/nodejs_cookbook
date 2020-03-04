@@ -9,7 +9,7 @@ Here are the outline:
 * <a href="#express">Express.js</a>
 * <a href="#http">HTTP Request</a>
 
-## <div id="architect"></div>
+## <div id="architect">Architecture</div>
 
 Generally, the server-side technologies like [PHP](https://www.edureka.co/blog/php-tutorial-for-beginners/), ASP.NET, [Ruby](https://www.edureka.co/blog/ruby-on-rails-tutorial/) & [Java](https://www.edureka.co/blog/java-tutorial/) Servers all follow a multi-threaded model. In this traditional architectural approach, each client request creates a new thread or a process.
 
