@@ -10,7 +10,7 @@ Here are the outline:
   * <a href="#nodemon">nodemon</a>
   * <a href="#express">Express.js</a>
   * <a href="#http">HTTP packages</a>
-  * <a href="websocket">WebSocket</a>
+  * <a href="#websocket">WebSocket</a>
 
 ## <div id="architect">Architecture</div>
 
