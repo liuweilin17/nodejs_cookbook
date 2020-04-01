@@ -11,6 +11,7 @@ Here are the outline:
   * <a href="#express">Express.js</a>
   * <a href="#http">HTTP packages</a>
   * <a href="#websocket">WebSocket</a>
+* <a href="#crawl">Crawl</a>
 
 ## <div id="architect">Architecture</div>
 
@@ -166,7 +167,15 @@ console.log(body);
 ### <div id="websocket">WebSocket</div>
 The **WebSocket API** is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. In Nodejs, one of the package called [websocket](https://github.com/theturtle32/WebSocket-Node) are prefered by most people.
 
+## <div id="crawl">Crawl</div>
+
+In order to crawl data from webpages, [axios](https://www.npmjs.com/package/axios) could be used to send request and get response, [cheerio](https://www.npmjs.com/package/cheerio) to parse the html.
+
+Some websites could have anti-crawling system, then we could use [puppeteer](https://www.npmjs.com/package/puppeteer) to control browser to send request, get and parse the response.
+
+* Example 1: [crawling udemy](https://github.com/liuweilin17/mie1624/tree/master/project/crawl/udemy/crawl_node)
+* Example 2: [crawling linkedin](https://github.com/spinlud/linkedin-jobs-scraper)
+
 ## Reference
 
 * [edureka blog](https://www.edureka.co/blog/node-js-npm-tutorial/)
-* 
