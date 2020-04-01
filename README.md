@@ -4,10 +4,13 @@ Node.js is a powerful JavaScript framework that is developed on Chrome’s V8 Ja
 Here are the outline:
 
 * <a href="#architect">Architecture</a>
+* <a href="#rest-api">REST API</a>
 * <a href="#npm">NPM</a>
-* <a href="#rest-api">REST API</a>
-* <a href="#express">Express.js</a>
-* <a href="#http">HTTP Request</a>
+* <a href='#packages'>Packages</a>
+  * <a href="#nodemon">nodemon</a>
+  * <a href="#express">Express.js</a>
+  * <a href="#http">HTTP packages</a>
+  * <a href="websocket">WebSocket</a>
 
 ## <div id="architect">Architecture</div>
 
@@ -18,6 +21,10 @@ Generally, the server-side technologies like [PHP](https://www.edureka.co/blog/p
 To avoid this, Node.js uses **Single Threaded Event Loop Model** **Architecture**. It means that all the client requests on Node.js are executed on the same thread. But this architecture is not just single-threaded, but event-driven as well. It helps Node.js in handling multiple clients concurrently. Below diagram, represents the Single Threaded Event Loop Model architecture.
 
 ![alt text](img/Single-Thread-Architecture.png "nodejs architecture")
+
+## <div id="rest-api">REST API</div>
+
+**RE**presentational **S**tate **T**ransfer. It is an architectural style as well as an approach for communications purposes that is often used in various web services development. It is an application program interface (API) that makes use of the HTTP requests to GET, PUT, POST and DELETE the data over WWW.
 
 
 ## <div id="npm">NPM</div>
@@ -61,19 +68,24 @@ It also provides a Command Line Interface (CLI) which helps the developers in lo
 
   *DevDependencies:* Dependencies that are used only in the development part of the app are specified here
 
-* Some useful packages:
+* package-lock.json
+package-lock.json is automatically generated for any operations where npm modifies either the node_modules tree, or package.json. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates. One key detail about package-lock.json is that it cannot be published, and it will be ignored if found in any place other than the toplevel package.
 
-  *Express*: Fast, unopinionated, minimalist web framework for [Node.js](https://nodejs.org/en/)
+## <div id="packages">Packages</div>
 
-  *nodemon*: Implicitly detect the changes and restart the server for you
+### <div id="nodemon">nodemon</div>
 
-## <div id="rest-api">REST API</div>
+nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
-**RE**presentational **S**tate **T**ransfer. It is an architectural style as well as an approach for communications purposes that is often used in various web services development. It is an application program interface (API) that makes use of the HTTP requests to GET, PUT, POST and DELETE the data over WWW.
+Installation:
 
-## <div id="express">Express.js</div>
+```bash
+npm install -g nodemon #globally
+```
 
-the de facto standard server framework for Node.js.
+### <div id="express">Express.js</div>
+
+[Express](https://expressjs.com/) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
 * Example:
 
@@ -102,7 +114,8 @@ the de facto standard server framework for Node.js.
   // HANDLER is the callback function that is executed when the matching route is found.
   ```
 
-## <div id='http'> HTTP Request </div>
+### <div id='http'> HTTP Request </div>
+
 * HTTP Module
 ```javascript
 const https = require("https");
@@ -150,7 +163,8 @@ console.log(body);
   getData(url);
   ```
 
-  
+### <div id="websocket">WebSocket</div>
+The **WebSocket API** is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. In Nodejs, one of the package called [websocket](https://github.com/theturtle32/WebSocket-Node) are prefered by most people.
 
 ## Reference
 
